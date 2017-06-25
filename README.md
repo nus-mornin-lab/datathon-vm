@@ -64,7 +64,7 @@ sudo make install
 
 #### Install common R packages
 ```
-sudo apt-get install libxml2-dev libpgxx-dev jags -y
+sudo apt-get install libxml2-dev libpqxx-dev jags -y
 sudo Rscript r_pkg_install.R
 ```
 #### Install R Jupyter kernel
