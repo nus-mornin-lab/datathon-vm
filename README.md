@@ -95,6 +95,9 @@ sudo jupyterhub -f jupyterhub_config.py
 ```
 
 ### Set up user's home directory
+```
+mkdir -p skel/R/library
+```
 Move `skel` directory to `/etc/skel`.
 
 ### Post user account creation
