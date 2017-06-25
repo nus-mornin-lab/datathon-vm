@@ -1,11 +1,13 @@
 #!/bin/bash
 
 sudo -i -u "$1" -H /bin/bash -c "cd; \
-    virtualenv -p python --system-site-packages user-py2; \
-    source ~/user-py2/bin/activate; \
-    python -m ipykernel install --user --name py2user --display-name user-py2; \
+    mkdir .virtualenvs; \
+    cd .virtualenvs; \
+    virtualenv -p python --system-site-packages 2; \
+    source ./2/bin/activate; \
+    python -m ipykernel install --user --name py2user --display-name py2user; \
     deactivate; \
-    virtualenv -p python3 --system-site-packages user-py3; \
-    source ~/user-py3/bin/activate; \
-    python -m ipykernel install --user --name py3user --display-name user-py3; \
+    virtualenv -p python3 --system-site-packages 3; \
+    source ./3/bin/activate; \
+    python -m ipykernel install --user --name py3user --display-name py3user; \
     deactivate"

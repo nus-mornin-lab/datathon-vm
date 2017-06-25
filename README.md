@@ -1,4 +1,7 @@
 ## Install stuff
+```
+git clone https://github.com/kiendang/datathon-vm
+```
 
 ### Miscellaneous
 ```
@@ -99,7 +102,12 @@ sudo jupyterhub -f jupyterhub_config.py
 mkdir -p skel/R/library
 ```
 Move `skel` directory to `/etc/skel`.
-
+### Edit `.bashrc` to use `virtualenvwrapper`
+```
+sudo echo "" >> /etc/skel/.bashrc
+sudo echo "export WORKON_HOME=~/.virtualenvs" >> /etc/skel/.bashrc
+sudo echo "source /usr/local/bin/virtualenvwrapper.sh" >> /etc/skel/.bashrc
+```
 ### Post user account creation
 Set up user's local virtualenv (and jupyter kernel) for python and python3 to enable them to install their own packages.
 Copy `adduser.local` to `/usr/local/sbin`.
