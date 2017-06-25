@@ -25,7 +25,7 @@ sudo -H pip install pip -U
 
 #### Install common packages
 ```
-sudo -H pip install numpy scipy sklearn statsmodels pandas matplotlib seaborn bokeh pymc psycopg2 virtualenv
+sudo -H pip install numpy scipy sklearn statsmodels pandas matplotlib seaborn bokeh pymc psycopg2 virtualenv virtualenvwrapper
 sudo -H pip3 install numpy scipy sklearn statsmodels pandas matplotlib seaborn bokeh pymc3 psycopg2
 ```
 
