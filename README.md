@@ -4,7 +4,7 @@
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install vim emacs git libpgcxx-dev -y
+sudo apt-get install vim emacs git gfortran libopenblas-dev -y
 ```
 
 ### Install Python
@@ -16,8 +16,8 @@ sudo apt-get install python-dev python3-dev python-pip python3-pip -y
 
 #### Update pip
 ```
-sudo pip3 install pip -U
-sudo pip install pip -U
+sudo -H pip3 install pip -U
+sudo -H pip install pip -U
 ```
 
 #### Install common packages
@@ -39,7 +39,7 @@ sudo python3 setup.py install
 ```
 sudo apt-get install npm nodejs-legacy -y
 sudo npm install -g configurable-http-proxy
-sudo -H pip3 install jupyterhub notebook
+sudo -H pip3 install jupyterhub notebook jupyterhub-systemdspawner
 ```
 
 ### Install R
@@ -47,12 +47,11 @@ sudo -H pip3 install jupyterhub notebook
 #### Dependencies
 ```
 sudo apt-get build-dep r-base-core -y
-sudo apt-get install libopenblas-dev libcurl4-openssl-dev -y
 ```
 
 #### Compile R
 ```
-wget http://cran.stat.nus.edu.sg/src/base/R-3/R-3.4.0.tar.gz
+wget https://cran.r-project.org/src/base/R-3/R-3.4.0.tar.gz
 tar xvf R-3.4.0.tar.gz
 cd R-3.4.0
 ./configure --without-x --with-readline --with-blas="-lopenblas" --enable-R-shlib
@@ -62,7 +61,7 @@ sudo make install
 
 #### Install common R packages
 ```
-sudo apt-get install libxml2-dev -y
+sudo apt-get install libxml2-dev libpgxx-dev jags -y
 sudo Rscript r_pkg_install.R
 ```
 #### Install R Jupyter kernel
@@ -104,7 +103,7 @@ Set up user's local virtualenv (and jupyter kernel) for python and python3 to en
 Copy `adduser.local` to `/usr/local/sbin`.
 ```
 sudo cp adduser.local /usr/local/sbin/
-chmod +x adduser.local
+sudo chmod +x /usr/local/sbin/adduser.local
 ```
 
 

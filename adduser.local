@@ -5,6 +5,7 @@ sudo -i -u "$1" -H /bin/bash -c "cd; \
     source ~/user-py2/bin/activate; \
     python -m ipykernel install --user --name py2user --display-name user-py2; \
     deactivate; \
-    virtualenv -p python3 --system-site-packages user-py3;
+    virtualenv -p python3 --system-site-packages user-py3; \
+    source ~/user-py3/bin/activate; \
     python -m ipykernel install --user --name py3user --display-name user-py3; \
     deactivate"
