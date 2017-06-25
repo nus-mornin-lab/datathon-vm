@@ -82,11 +82,10 @@ sudo Rscript -e "IRkernel::installspec(user = FALSE)"
 
 ### Run Jupyterhub
 
-#### Create config file
+#### Config file
 ```
 sudo mkdir /etc/jupyterhub
-cd /etc/jupyterhub
-sudo jupyterhub --generate-config
+sudo cp jupyterhub_config.py /etc/jupyterhub/
 ```
 
 #### Run jupyterhub
