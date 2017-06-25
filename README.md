@@ -100,8 +100,8 @@ sudo jupyterhub -f jupyterhub_config.py
 ### Set up user's home directory
 ```
 mkdir -p skel/R/library
+sudo cp -a skel/. /etc/skel/
 ```
-Move `skel` directory to `/etc/skel`.
 ### Edit `.bashrc` to use `virtualenvwrapper`
 ```
 sudo echo "" >> /etc/skel/.bashrc
