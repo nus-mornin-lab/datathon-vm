@@ -1,3 +1,5 @@
+Steps to set up a VM for the [NUS-MIT Healthcare Analytics Datathon 2017](http://www.nus-datathon.com/) using `Ubuntu 16.04 LTS`
+
 ## Install stuff
 ```
 git clone https://github.com/kiendang/datathon-vm
@@ -24,6 +26,7 @@ sudo -H pip install pip -U
 ```
 
 #### Install common packages
+Should have put all the package names in `requirements.txt`.
 ```
 sudo -H pip install numpy scipy sklearn statsmodels pandas matplotlib seaborn bokeh pymc psycopg2 virtualenv virtualenvwrapper
 sudo -H pip3 install numpy scipy sklearn statsmodels pandas matplotlib seaborn bokeh pymc3 psycopg2
