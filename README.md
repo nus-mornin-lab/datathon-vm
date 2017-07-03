@@ -1,4 +1,5 @@
-Steps to set up a VM for the [NUS-MIT Healthcare Analytics Datathon 2017](http://www.nus-datathon.com/) using `Ubuntu 16.04 LTS`
+# Steps to set up a VM running on `Ubuntu 16.04 LTS` for  [NUS-MIT Healthcare Analytics Datathon 2017](http://www.nus-datathon.com/)  
+tl;dr: Use `Jupyterhub` with `R` and user-specific `Python` kernels and `PostgreSQL` for database.
 
 ## Install stuff
 ```
