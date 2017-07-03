@@ -215,9 +215,10 @@
 #c.JupyterHub.spawner_class = 'jupyterhub.spawner.LocalProcessSpawner'
 c.JupyterHub.spawner_class = 'systemdspawner.SystemdSpawner'
 
+c.SystemdSpawner.mem_limit = '30G'
 c.SystemdSpawner.cpu_limit = 8.0
 c.SystemdSpawner.isolate_tmp = True
-c.SystemdSpaener.isolate_devices = True
+c.SystemdSpawner.isolate_devices = True
 c.SystemdSpawner.disable_user_sudo = True
 
 ## Path to SSL certificate file for the public facing interface of the proxy
