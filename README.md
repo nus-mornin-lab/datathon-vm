@@ -25,6 +25,8 @@ sudo apt-get install python-dev python3-dev python-pip python3-pip -y
 sudo -H pip3 install pip -U
 sudo -H pip install pip -U
 ```
+The two commands should be run in this order for `pip` to remain pointing to `Python2 pip` because `pip3 install pip` will shadow `pip`. Can also try `--force-reinstall`.
+
 
 #### Install common packages
 Should have put all the package names in `requirements.txt`.
